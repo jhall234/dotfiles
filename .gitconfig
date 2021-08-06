@@ -1,0 +1,21 @@
+[user]
+	name = Josh Hallinan
+	email = jhallinan@fanatics.com
+
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+
+[pull]
+	rebase = merges
+
+[core]
+	excludesfile = /Users/jhallinan/.gitignore
+
+[alias]
+  hist = log --pretty=format:"%C(green)%h\\ %C(yellow)%ad%C(blue)%d\\ %C(reset)%s%C(cyan)\\ [%cn]"  --date=short
+
+[init]
+	defaultBranch = main
