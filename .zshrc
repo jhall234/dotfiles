@@ -61,6 +61,7 @@ export PATH=$HOME/.cargo/bin:$PATH
 # Golang
 export GOPATH="${HOME}/go"
 export GOROOT="$(brew --prefix golang)/libexec"
+export GOPROXY=""
 export PATH="$PATH:${GOPATH}/bin:${GOROOT}/bin"
 test -d "${GOPATH}" || mkdir "${GOPATH}"
 
