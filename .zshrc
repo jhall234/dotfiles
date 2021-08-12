@@ -43,6 +43,9 @@ eval "$(direnv hook zsh)"
 # dotfiles repo
 alias config='/usr/bin/git --git-dir=$HOME/dotfiles/ --work-tree=$HOME'
 
+# Homebrew
+export HOMEBREW_BUNDLE_FILE="${HOME}/.Brewfile"
+
 # Python
 alias python='python3'
 
