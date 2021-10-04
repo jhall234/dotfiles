@@ -61,7 +61,8 @@ export PATH=$HOME/.cargo/bin:$PATH
 # Golang
 export GOPATH="${HOME}/go"
 export GOROOT="$(brew --prefix golang)/libexec"
-export GOPROXY=""
+export GOPROXY="direct"
+export GOSUMDB="off"
 export PATH="$PATH:${GOPATH}/bin:${GOROOT}/bin"
 test -d "${GOPATH}" || mkdir "${GOPATH}"
 
@@ -87,6 +88,15 @@ alias deploy="sfdx force:source:deploy -p"
 
 # Django Aliases
 alias dm='python3 manage.py'
+
+# Kafka
+export PATH="/usr/local/opt/kafka/bin:$PATH"
+
+# Setup podman env vars
+# Pulled from here https://www.redhat.com/sysadmin/replace-docker-podman-macos
+export CONTAINER_HOST=ssh://vagrant@127.0.0.1:2222/run/podman/podman.sock
+export CONTAINER_SSHKEY=~/tools/podman/.vagrant/machines/default/virtualbox/private_key
+#
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f $P10K_THEME_PATH ]] || source $P10K_THEME_PATH

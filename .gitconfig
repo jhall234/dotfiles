@@ -19,3 +19,6 @@
 
 [init]
 	defaultBranch = main
+[githooks]
+	cloneUrl = https://github.com/rycus86/githooks.git
+	cloneBranch = master
