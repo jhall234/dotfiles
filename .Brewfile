@@ -27,6 +27,7 @@ brew "jmeter"
 brew "jq"
 brew "kafka"
 brew "krb5"
+brew "mas"
 brew "mysql"
 brew "nginx"
 brew "node"
@@ -66,3 +67,9 @@ cask "sfdx"
 cask "spotify"
 cask "vagrant"
 cask "visual-studio-code"
+mas "GarageBand", id: 682658836
+mas "iMovie", id: 408981434
+mas "Install macOS Catalina", id: 0
+mas "Keynote", id: 409183694
+mas "Numbers", id: 409203825
+mas "Pages", id: 409201541
